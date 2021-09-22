@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -14,22 +16,12 @@
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <script src="https://cdn.tiny.cloud/1/48hodnpb8ayhp7nux2g8izz11y2ag6h70aikj9l6eawthfqc/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
-    <script>
-        tinymce.init({
-            selector: 'textarea#editor',
-            menubar: false
-        });
-    </script>
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <div class="main-wrapper">
 
@@ -159,7 +151,6 @@
 
         </div>
 
-
         <div class="sidebar" id="sidebar">
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
@@ -207,60 +198,155 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">New Document</h3>
+                            <h3 class="page-title">History</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="documents.html">Documents</a></li>
-                                <li class="breadcrumb-item active">New Document</li>
+                                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Edit History
+                                </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="card">
+                        <div class="card card-table">
                             <div class="card-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Basic Details</span></h5>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Document ID</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Topic</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Department</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Created Date</label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Body</label>
-                                                <textarea id="editor"></textarea>
-                                            </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-center mb-0 datatable">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Version</th>
+                                                <th>Date</th>
+                                                <th>Edited By</th>
+                                                <!-- <th>Section</th>
+                                                <th>Mobile Number</th>
+                                                <th>Address</th> -->
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>PRE2209</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a class="avatar avatar-sm mr-2"><img class="avatar-img square" src="assets/img/profiles/avatar-01.png" alt="User Image"></a>
+                                                        <a>Aaliyah</a>
+                                                    </h2>
+                                                </td>
+                                                <td>Version 1</td>
+                                                <td>2020/10/20</td>
+                                                <td>Lahiru Kannangara</td>
+                                                <!-- <td>A</td>
+                                                <td>097 3584 5870</td>
+                                                <td>911 Deer Ridge Drive,USA</td> -->
+                                                <td class="text-right">
+                                                    <div class="actions">
+                                                        <a href="#" class="btn btn-sm bg-success-light mr-2">
+                                                            <i class="fas fa-pen"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PRE2213</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a class="avatar avatar-sm mr-2"><img class="avatar-img square" src="assets/img/profiles/avatar-01.png" alt="User Image"></a>
+                                                        <a>Malynne</a>
+                                                    </h2>
+                                                </td>
+                                                <td>Version 2</td>
+                                                <td>2020/09/05</td>
+                                                <td>Thusahn Isuru</td>
+                                                <td class="text-right">
+                                                    <div class="actions">
+                                                        <a href="#" class="btn btn-sm bg-success-light mr-2">
+                                                            <i class="fas fa-pen"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PRE2143</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a class="avatar avatar-sm mr-2"><img class="avatar-img square" src="assets/img/profiles/avatar-01.png" alt="User Image"></a>
+                                                        <a>Levell Scott</a>
+                                                    </h2>
+                                                </td>
+                                                <td>Version 3</td>
+                                                <td>2020/08/30</td>
+                                                <td>Chandula Siriwardana</td>
+                                                <td class="text-right">
+                                                    <div class="actions">
+                                                        <a href="#" class="btn btn-sm bg-success-light mr-2">
+                                                            <i class="fas fa-pen"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PRE2431</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a class="avatar avatar-sm mr-2"><img class="avatar-img square" src="assets/img/profiles/avatar-01.png" alt="User Image"></a>
+                                                        <a>Minnie</a>
+                                                    </h2>
+                                                </td>
+                                                <td>Version 1</td>
+                                                <td>2020/08/26</td>
+                                                <td>Hasindu Heshan</td>
+                                                <td class="text-right">
+                                                    <div class="actions">
+                                                        <a href="#" class="btn btn-sm bg-success-light mr-2">
+                                                            <i class="fas fa-pen"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>PRE1534</td>
+                                                <td>
+                                                    <h2 class="table-avatar">
+                                                        <a class="avatar avatar-sm mr-2"><img class="avatar-img square" src="assets/img/profiles/avatar-01.png" alt="User Image"></a>
+                                                        <a>Lois A</a>
+                                                    </h2>
+                                                </td>
+                                                <td>Version 2</td>
+                                                <td>2020/07/30</td>
+                                                <td>Supun Harsha</td>
+                                                <td class="text-right">
+                                                    <div class="actions">
+                                                        <a href="#" class="btn btn-sm bg-success-light mr-2">
+                                                            <i class="fas fa-pen"></i>
+                                                        </a>
+                                                        <a href="#" class="btn btn-sm bg-danger-light">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
+
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -283,7 +369,11 @@
 
     <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+    <script src="assets/plugins/datatables/datatables.min.js"></script>
+
     <script src="assets/js/script.js"></script>
 </body>
+
+
 
 </html>
