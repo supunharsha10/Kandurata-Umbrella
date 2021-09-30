@@ -133,7 +133,7 @@
                                 <img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
                             </div>
                             <div class="user-text">
-                                <h6>Ryan Taylor</h6>
+                                <h6>SDB Bank</h6>
                                 <p class="text-muted mb-0">Administrator</p>
                             </div>
                         </div>
@@ -155,16 +155,15 @@
                         <li class="menu-title">
                             <span>Main Menu</span>
                         </li>
-                        <li class="active">
+                        <li class="submenu">
                             <a href="index.html"><i class="fas fa-th-large"></i> <span>Dashboard</span></a>
                         </li>
-                        <li class="submenu">
-                            <a href="#"><i class="fas fa-user-graduate"></i> <span> Customers</span> <span class="menu-arrow"></span></a>
+                        <li class="active">
+                            <a href="#"><i class="fas fa-user-graduate"></i> <span>Customers</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="customers.html">Customer List</a></li>
                                 <li><a href="customer-details.html">Customer View</a></li>
                                 <li><a href="add-customer.html">Customer Add</a></li>
-                                <li><a href="edit-customer.html">Customer Edit</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -173,7 +172,12 @@
                                 <li><a href="documents.html">Document List</a></li>
                                 <li><a href="document-details.html">Document View</a></li>
                                 <li><a href="add-document.html">Document Add</a></li>
-                                <li><a href="edit-document.html">Document Edit</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Tasks</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="tasks.html">Tasks List</a></li>
                             </ul>
                         </li>
                         <li>
@@ -191,10 +195,10 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Add Students</h3>
+                            <h3 class="page-title">Add Customers</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="students.html">Students</a></li>
-                                <li class="breadcrumb-item active">Add Students</li>
+                                <li class="breadcrumb-item"><a href="customer.html">Customers</a></li>
+                                <li class="breadcrumb-item active">Add Customer</li>
                             </ul>
                         </div>
                     </div>
@@ -207,54 +211,23 @@
                                 <form>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h5 class="form-title"><span>Student Information</span></h5>
+                                            <h5 class="form-title"><span>Customer Details</span></h5>
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <div class="form-group">
-                                                <label>First Name</label>
+                                                <label>Company Name</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <div class="form-group">
-                                                <label>Last Name</label>
+                                                <label>Industry</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <div class="form-group">
-                                                <label>Student Id</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Gender</label>
-                                                <select class="form-control">
-<option>Select Gender</option>
-<option>Female</option>
-<option>Male</option>
-<option>Others</option>
-</select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Date of Birth</label>
-                                                <div>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Class</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Religion</label>
+                                                <label>Customer Id</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </div>
@@ -274,82 +247,13 @@
                                         </div>
                                         <div class="col-12 col-sm-6">
                                             <div class="form-group">
-                                                <label>Admission Number</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Section</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Student Image</label>
+                                                <label>Customer Image</label>
                                                 <input type="file" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Parent Information</span></h5>
-                                        </div>
                                         <div class="col-12 col-sm-6">
                                             <div class="form-group">
-                                                <label>Father's Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Father's Occupation</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Father's Mobile</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Father's Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Mother's Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Mother's Occupation</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Mother's Mobile</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Mother's Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Present Address</label>
-                                                <textarea class="form-control"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="form-group">
-                                                <label>Permanent Address</label>
+                                                <label>Address</label>
                                                 <textarea class="form-control"></textarea>
                                             </div>
                                         </div>
@@ -363,7 +267,13 @@
                     </div>
                 </div>
             </div>
+
+            <footer>
+                <p>Copyright © 2021 KANDURATA UMBRELLA INDUSTRIES (PVT) LTD.</p>
+            </footer>
+
         </div>
+
 
     </div>
 
